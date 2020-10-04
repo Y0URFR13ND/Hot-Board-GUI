@@ -1,0 +1,77 @@
+BoxLayout:
+    orientation: 'horizontal'
+    buttonbox: "buttons"
+
+    BoxLayout:
+        orientation: 'vertical'
+        size_hint: (0.7, 1)
+
+        BoxLayout:
+            orientation: 'horizontal'
+
+
+
+
+            GridLayout:             #Grid Layout for the 12 Buttons
+                id: 'buttons'
+                cols: 4
+                size_hint: (1, .8)
+
+                Button:
+                    text: 'G1'
+                Button:
+                    text: 'G2'
+                Button:
+                    text: 'G3'
+                Button:
+                    text: 'G4'
+                Button:
+                    text: 'G5'
+                Button:
+                    text: 'G6'
+                Button:
+                    text: 'G7'
+                Button:
+                    text: 'G8'
+                Button:
+                    text: 'G9'
+                Button:
+                    text: 'G10'
+                Button:
+                    text: 'G11'
+                Button:
+                    text: 'G12'
+
+
+        #Config Box in the Bottom
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint: (1, 0.5)
+            Button:
+                text: 'Config'
+
+
+    #Box in the Right for all the Actions
+    GridLayout:
+        cols: 1
+        size_hint: (0.3, 1)
+
+        Label:
+            text: "Available Actions"
+            halign: "left"
+
+        MDRectangleFlatButton:
+            text: "Start application"
+            size_hint_x: 1
+            pos_hint: {"center_y": 0.8}
+
+
+        MDRectangleFlatButton:
+            text: "Random"
+            size_hint_x: 1
+
+
+        MDRectangleFlatButton:
+            text: "Hotkey"
+            size_hint_x: 1
+
